@@ -4,6 +4,10 @@ import store from './store' // store
 import plugins from './plugins' // plugins
 import './permission' // permission
 Vue.use(plugins)
+// main.js，注意要在use方法之后执行
+import uView from 'uview-ui'
+Vue.use(uView)
+
 
 Vue.config.productionTip = false
 Vue.prototype.$store = store

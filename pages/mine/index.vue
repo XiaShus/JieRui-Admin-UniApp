@@ -14,7 +14,7 @@
           </view>
           <view v-if="name" @click="handleToInfo" class="user-info">
             <view class="u_title">
-              用户名：{{ name }}
+              {{ name }}
             </view>
           </view>
         </view>
@@ -27,21 +27,21 @@
 
     <view class="content-section">
       <view class="mine-actions grid col-4 text-center">
-        <view class="action-item" @click="handleJiaoLiuQun">
+        <view class="action-item" @click="handleBuilding">
           <view class="iconfont icon-friendfill text-pink icon"></view>
-          <text class="text">交流群</text>
+          <text class="text">基础信息</text>
         </view>
         <view class="action-item" @click="handleBuilding">
           <view class="iconfont icon-service text-blue icon"></view>
-          <text class="text">在线客服</text>
+          <text class="text">个人档案</text>
         </view>
         <view class="action-item" @click="handleBuilding">
           <view class="iconfont icon-community text-mauve icon"></view>
-          <text class="text">反馈社区</text>
+          <text class="text">学习记录</text>
         </view>
         <view class="action-item" @click="handleBuilding">
           <view class="iconfont icon-dianzan text-green icon"></view>
-          <text class="text">点赞我们</text>
+          <text class="text">其他模块</text>
         </view>
       </view>
 
@@ -123,11 +123,8 @@
       handleAbout() {
         this.$tab.navigateTo('/pages/mine/about/index')
       },
-      handleJiaoLiuQun() {
-        this.$modal.showToast('微信搜索 naidaguo 后，添加好友后拉你进技术交流群')
-      },
       handleBuilding() {
-        this.$modal.showToast('模块建设中~')
+        this.$modal.showToast('正在开发中~')
       }
     }
   }
@@ -135,7 +132,7 @@
 
 <style lang="scss">
   page {
-    background-color: #f5f6f7;
+    background-color: #E8EAF1;
   }
 
   .mine-container {
@@ -145,7 +142,7 @@
 
     .header-section {
       padding: 15px 15px 45px 15px;
-      background-color: #3c96f3;
+      background-color: #3E63E7;
       color: white;
 
       .login-tip {

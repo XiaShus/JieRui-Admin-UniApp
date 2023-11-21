@@ -1,87 +1,138 @@
 {
-  "pages": [{
-    "path": "pages/login",
-    "style": {
-      "navigationBarTitleText": "登录"
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  },
+  "pages": [
+    {
+      "path": "pages/login",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/index",
+      "style": {
+        "navigationBarTitleText": "智慧工地系统",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/task/index",
+      "style": {
+        "navigationBarTitleText": "任务中心"
+      }
+    },
+    {
+      "path": "pages/bi/index",
+      "style": {
+        "navigationBarTitleText": "数据中心"
+      }
+    },
+    {
+      "path": "pages/work/index",
+      "style": {
+        "navigationBarTitleText": "工作台"
+      }
+    },
+    {
+      "path": "pages/work/index",
+      "style": {
+        "navigationBarTitleText": "工作台"
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/mine/avatar/index",
+      "style": {
+        "navigationBarTitleText": "修改头像"
+      }
+    },
+    {
+      "path": "pages/mine/info/index",
+      "style": {
+        "navigationBarTitleText": "个人信息"
+      }
+    },
+    {
+      "path": "pages/mine/info/edit",
+      "style": {
+        "navigationBarTitleText": "编辑资料"
+      }
+    },
+    {
+      "path": "pages/mine/pwd/index",
+      "style": {
+        "navigationBarTitleText": "修改密码"
+      }
+    },
+    {
+      "path": "pages/mine/setting/index",
+      "style": {
+        "navigationBarTitleText": "应用设置"
+      }
+    },
+    {
+      "path": "pages/mine/help/index",
+      "style": {
+        "navigationBarTitleText": "常见问题"
+      }
+    },
+    {
+      "path": "pages/mine/about/index",
+      "style": {
+        "navigationBarTitleText": "关于我们"
+      }
+    },
+    {
+      "path": "pages/common/webview/index",
+      "style": {
+        "navigationBarTitleText": "浏览网页"
+      }
+    },
+    {
+      "path": "pages/common/textview/index",
+      "style": {
+        "navigationBarTitleText": "浏览文本"
+      }
     }
-  }, {
-    "path": "pages/index",
-    "style": {
-      "navigationBarTitleText": "芋道移动端框架",
-      "navigationStyle": "custom"
-    }
-  }, {
-    "path": "pages/work/index",
-    "style": {
-      "navigationBarTitleText": "工作台"
-    }
-  }, {
-    "path": "pages/mine/index",
-    "style": {
-      "navigationBarTitleText": "我的"
-    }
-  }, {
-    "path": "pages/mine/avatar/index",
-    "style": {
-      "navigationBarTitleText": "修改头像"
-    }
-  }, {
-    "path": "pages/mine/info/index",
-    "style": {
-      "navigationBarTitleText": "个人信息"
-    }
-  }, {
-    "path": "pages/mine/info/edit",
-    "style": {
-      "navigationBarTitleText": "编辑资料"
-    }
-  }, {
-    "path": "pages/mine/pwd/index",
-    "style": {
-      "navigationBarTitleText": "修改密码"
-    }
-  }, {
-    "path": "pages/mine/setting/index",
-    "style": {
-      "navigationBarTitleText": "应用设置"
-    }
-  }, {
-    "path": "pages/mine/help/index",
-    "style": {
-      "navigationBarTitleText": "常见问题"
-    }
-  }, {
-    "path": "pages/mine/about/index",
-    "style": {
-      "navigationBarTitleText": "关于我们"
-    }
-  }, {
-    "path": "pages/common/webview/index",
-    "style": {
-      "navigationBarTitleText": "浏览网页"
-    }
-  }, {
-    "path": "pages/common/textview/index",
-    "style": {
-      "navigationBarTitleText": "浏览文本"
-    }
-  }],
+  ],
   "tabBar": {
     "color": "#000000",
     "selectedColor": "#000000",
     "borderStyle": "white",
     "backgroundColor": "#ffffff",
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/index",
         "iconPath": "static/images/tabbar/home.png",
         "selectedIconPath": "static/images/tabbar/home_.png",
         "text": "首页"
-      }, {
+      },
+      {
+        "pagePath": "pages/task/index",
+        "iconPath": "static/images/tabbar/home.png",
+        "selectedIconPath": "static/images/tabbar/home_.png",
+        "text": "任务中心"
+      },
+      {
+        "pagePath": "pages/bi/index",
+        "iconPath": "static/images/tabbar/mine.png",
+        "selectedIconPath": "static/images/tabbar/mine_.png",
+        "text": "数据中心"
+      },
+      {
         "pagePath": "pages/work/index",
         "iconPath": "static/images/tabbar/work.png",
         "selectedIconPath": "static/images/tabbar/work_.png",
         "text": "工作台"
-      }, {
+      },
+      {
         "pagePath": "pages/mine/index",
         "iconPath": "static/images/tabbar/mine.png",
         "selectedIconPath": "static/images/tabbar/mine_.png",
@@ -90,8 +141,8 @@
     ]
   },
   "globalStyle": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "RuoYi",
-    "navigationBarBackgroundColor": "#FFFFFF"
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "智慧工地平台",
+    "navigationBarBackgroundColor": "#3E63E7"
   }
 }

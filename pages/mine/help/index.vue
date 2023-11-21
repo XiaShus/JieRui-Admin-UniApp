@@ -20,20 +20,11 @@
     data() {
       return {
         list: [{
-            icon: 'iconfont icon-github',
-            title: '芋道问题',
+            icon: 'iconfont icon-community',
+            title: '使用问题',
             childList: [{
-              title: '芋道开源吗？',
-              content: '开源'
-            }, {
-              title: '芋道可以商用吗？',
-              content: '可以'
-            }, {
-              title: '芋道官网地址多少？',
-              content: 'https://www.iocoder.cn'
-            }, {
-              title: '芋道文档地址多少？',
-              content: 'https://doc.iocoder.cn'
+              title: '编辑资料后无法跳转？',
+              content: '暂未修复'
             }]
           },
           {

@@ -1,5 +1,5 @@
 {
-    "name" : "芋道移动端",
+    "name" : "智慧工地系统",
     "appid" : "__UNI__25A9D80",
     "description" : "",
     "versionName" : "1.0.0",
@@ -14,7 +14,10 @@
             "autoclose" : true,
             "delay" : 0
         },
-        "modules" : {},
+        "modules" : {
+            "Camera" : {},
+            "Barcode" : {}
+        },
         "distribute" : {
             "android" : {
                 "permissions" : [
@@ -60,7 +63,7 @@
             "port" : 9090,
             "https" : false
         },
-        "title" : "Yudao-App",
+        "title" : "JieRui-App",
         "router" : {
             "mode" : "hash",
             "base" : "./"

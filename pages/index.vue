@@ -1,43 +1,61 @@
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.png"></image>
-    <view class="text-area">
-      <text class="title">Hello 芋道</text>
+
+    <!-- 顶部搜索 -->
+    <view class="">
+      <u-search :showAction="true" actionText="搜索" :animation="false"></u-search>
+    </view>
+    <!-- 快捷功能区 -->
+    <view class="">
+      <view>
+        <u-icon name="photo" color="#2979ff" size="100"></u-icon>
+        <text></text>
+      </view>
+      <view>
+        <u-icon name="photo"></u-icon>
+      </view>
+      <view>
+        <u-icon name="photo"></u-icon>
+      </view>
+      <view>
+        <u-icon name="photo"></u-icon>
+      </view>
+    </view>
+    <!-- 常用功能区 -->
+    <view class="">
+
+    </view>
+    <!-- 滚动公告 -->
+    <view class="">
+      <view class="notice-box">
+
+      </view>
+    </view>
+    <!-- 混合功能区 -->
+    <view class="">
+
     </view>
   </view>
 </template>
 
 <script>
-  export default {
-    onLoad: function() {
+export default {
+  data() {
+    return {
+      keyword: '遥看瀑布挂前川'
     }
+  },
+  onLoad: function () {
   }
+}
 </script>
 
 <style>
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+.content {
+  padding: 20px;
+}
 
-  .logo {
-    height: 200rpx;
-    width: 200rpx;
-    margin-top: 200rpx;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50rpx;
-  }
-
-  .text-area {
-    display: flex;
-    justify-content: center;
-  }
-
-  .title {
-    font-size: 36rpx;
-    color: #8f8f94;
-  }
+.notice-box {
+  background-color: #1cbbb4;
+}
 </style>

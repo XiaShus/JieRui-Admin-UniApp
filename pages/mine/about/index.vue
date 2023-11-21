@@ -3,7 +3,7 @@
     <view class="header-section text-center">
       <image style="width: 150rpx;height: 150rpx;" src="/static/logo200.png" mode="widthFix">
       </image>
-      <uni-title type="h2" title="芋道移动端"></uni-title>
+      <uni-title type="h2" title="智慧工地系统"></uni-title>
     </view>
 
     <view class="content-section">
